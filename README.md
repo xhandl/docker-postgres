@@ -41,3 +41,13 @@ Docker network:
 ```
 postgres
 ```
+
+Backup Windows:
+```
+docker exec -i postgres /usr/bin/pg_dump -U postgres <database-name> > backup.sql 
+```
+
+Backup Linux
+```
+docker exec -i postgres /usr/bin/pg_dump -U postgres <database-name> > $(date +%Y-%m-%d-%H-%M-%S)-backup.sql 
+```
