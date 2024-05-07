@@ -13,7 +13,7 @@ Main parametrs can be modified via `.env` file.
 
 Default configuration:
 ```
-IMAGE: postgres:15.2
+IMAGE: postgres:16
 CONTAINER NAME: postgres
 PORT: 5432
 SERVER: localhost

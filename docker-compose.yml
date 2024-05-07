@@ -1,8 +1,6 @@
-version: '3.8'
-
 services:
     postgres:
-        image: ${POSTGRES_IMAGE:-postgres:15.2}
+        image: ${POSTGRES_IMAGE:-postgres:16}
         container_name: ${POSTGRES_CONTAINER_NAME:-postgres}
         volumes:
             - ./volumes/postgresql/data:/var/lib/postgresql/data
